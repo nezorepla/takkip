@@ -1,0 +1,32 @@
+  alter proc Takkip_sp_add(@p1 varchar(250),@p2 varchar(250),@p3 varchar(250),@p4 varchar(250),@p5 varchar(500),
+    @p6 varchar(250),@p7 varchar(250),@p8 varchar(250),@p9 varchar(250)) as
+    
+   insert into Takkip_tbl_add_tmp
+   values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,GETDATE());
+    --create table Takkip_tbl_add_tmp
+    --(
+    --Intcode int identity(1,1),
+    --usr varchar(50),
+    --shp varchar(50),
+    --kat varchar(50),
+    --tar varchar(50),
+    --ack varchar(500),
+    --onm varchar(50),
+    --s_usr varchar(50),
+    --s_tar datetime
+    --)
+    select '1' rv
+    
+--    create proc Takkip_sp_wait (@usr varchar(250),@drm varchar(250),@tar varchar(250)) as    
+-- select IntCode ,kat,onm,shp,ack,null notlar,tar,tar tar2  from    Takkip_tbl_add_tmp where IntCode >2
+ --  Takkip_sp_wait 'usr','bekleyn','tarih'
+ 
+ 
+ --create table Takkip_tbl_usr
+ --   (
+ --   Intcode int identity(1,1),
+ --   usr varchar(50),
+ --   scl varchar(50),
+ --   rol int )
+    
+ --   insert into Takkip_tbl_usr values(
